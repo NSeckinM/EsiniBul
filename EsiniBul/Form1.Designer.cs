@@ -35,7 +35,7 @@ namespace EsiniBul
             // pnlKartlar
             // 
             this.pnlKartlar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.pnlKartlar.Location = new System.Drawing.Point(10, 10);
+            this.pnlKartlar.Location = new System.Drawing.Point(12, 20);
             this.pnlKartlar.Name = "pnlKartlar";
             this.pnlKartlar.Size = new System.Drawing.Size(500, 500);
             this.pnlKartlar.TabIndex = 0;
@@ -44,10 +44,13 @@ namespace EsiniBul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 532);
+            this.ClientSize = new System.Drawing.Size(536, 543);
             this.Controls.Add(this.pnlKartlar);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eşini Bul";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);
 
         }
